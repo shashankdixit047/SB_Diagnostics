@@ -19,6 +19,21 @@
 /*** 	   02. General css		  ***/
 /************************************/
 
+body::-webkit-scrollbar {
+	width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+	background: var(--primary-color) 50%;
+
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background: #393e46;
+	border-radius: 20px;       /* roundness of the scroll thumb */
+	border: 3px solid #393e46;  /* creates padding around scroll thumb */
+  }
+
 body{
 	font-family: var(--default-font);
 	font-size: 16px;
@@ -1417,7 +1432,7 @@ header.main-header .header-sticky.active{
 
 .home-contact-form{
 	padding: 100px 0 0;
-	background: url('../images/home-contact-form-bg.jpg') no-repeat center center;
+	background: url('../images/home-contact-form-bg.webp') no-repeat center center;
     background-size: cover;
 	position: relative;
 	z-index: 1;
@@ -2337,10 +2352,6 @@ header.main-header .header-sticky.active{
 }
 
 
-
-.services-single-image img{
-	filter: brightness(60%);
-} 
 
 .services-video-content p{
 	color: var(--transparent-secondry-color);
