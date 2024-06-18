@@ -1,9 +1,4 @@
 
-
-
-
-//  5 services for index page
-// data.js
 fetch('data/services.json')
     .then(response => response.json())
     .then(data => {
