@@ -96,7 +96,8 @@ body {
 
 .image-anime {
     position: relative;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
 }
 
 .image-anime:after {
@@ -1667,7 +1668,7 @@ img {
 .subpage-header {
     margin: 1px;
     padding: 150px 0 100px;
-    background: var(--primary-color);
+    background: var(--accent-color-3);
     position: relative
 }
 
@@ -1694,7 +1695,7 @@ img {
 .subpage-header-box h1 {
     font-family: var(--accent-font);
     font-size: 48px;
-    color: var(--accent-color);
+    color: var(--text-color);
     margin-bottom: 10px
 }
 
@@ -1711,7 +1712,7 @@ img {
     font-size: 18px;
     font-weight: 400;
     margin-right: 10px;
-    color: var(--secondry-color);
+    color: var(--text-color);
     text-transform: capitalize
 }
 
@@ -1745,7 +1746,11 @@ img {
 }
 
 .page-about-body h3 {
-    color: var(--transparent-secondry-color);
+    color: var(--text-color);
+    margin-bottom: 10px
+}
+.page-about-body h3 span{
+    color: var(--accent-color);
     margin-bottom: 10px
 }
 
@@ -1826,16 +1831,16 @@ img {
 }
 
 .improving-content .section-title h3 {
-    color: var(--accent-color)
+    color: var(--text-color)
 }
 
 .improving-content .section-title h2 {
-    color: var(--transparent-color)
+    color: var(--text-color)
 }
 
 .improving-body ul li {
     font-size: 16px;
-    color: var(--transparent-color)
+    color: var(--text-color)
 }
 
 .improving-btn .video-btn {
@@ -1843,11 +1848,12 @@ img {
     font-size: 18px;
     font-weight: 500;
     color: var(--secondry-color);
-    transition: var(--transition)
+    border-color: 2px solid var(--secondry-color);
 }
 
 .improving-btn .video-btn:hover {
-    color: var(--accent-color)
+    color: var(--accent-color);
+
 }
 
 .improving-btn .video-btn i {
@@ -1865,6 +1871,7 @@ img {
     box-shadow: 0 13px 34px 0 rgb(0 0 0 / .058823529411764705);
     height: calc(100% - 30px);
     margin-bottom: 30px;
+    border-radius: 30px 30px 0 0;
     transition: all 0.4s ease-in-out
 }
 
@@ -1879,7 +1886,7 @@ img {
     right: 0;
     bottom: 0;
     top: 100%;
-    background: var(--primary-color);
+    background: var(--text-color);
     transition: all 0.4s ease-in-out;
     z-index: -1
 }
@@ -1890,6 +1897,7 @@ img {
 
 .services-item .services-img {
     margin-bottom: 16px;
+    width: 60px;
     transition: all 0.6s ease-in-out
 }
 
@@ -1966,7 +1974,7 @@ img {
 
 .health-services-content p {
     font-size: 16px;
-    color: var(--transparent-secondry-color);
+    color: var(--text-color);
     margin-bottom: 30px
 }
 
@@ -1982,7 +1990,7 @@ img {
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: 500;
-    color: var(--primary-color)
+    color: var(--text-color)
 }
 
 .health-services-content ul li:before {
