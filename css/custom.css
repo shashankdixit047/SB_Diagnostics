@@ -1166,7 +1166,6 @@ img {
 }
 
 .faq-accordion .accordion-item {
-    background: none;
     border: none;
     margin-bottom: 20px
 }
@@ -1180,8 +1179,10 @@ img {
     font-weight: 600;
     color: var(--text-color);
     border: none;
+    
+    background-color: var(--accent-color);
     box-shadow: none;
-    padding: 10px 20px 10px 40px;
+    padding: 10px 40px 10px 40px;
     position: relative;
     transition: all 0.3s ease-in-out
 }
@@ -1212,11 +1213,13 @@ img {
 }
 
 .faq-accordion .accordion-item .accordion-collapse .accordion-body {
-    padding: 0 20px 0
+    padding:  20px ;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--accent-color-2);
 }
 
 .faq-accordion .accordion-item .accordion-collapse .accordion-body p {
-    color: var(--transparent-secondry-color);
+    color: var(--text-color);
     font-size: 18px;
     max-width: 490px
 }
@@ -1294,7 +1297,7 @@ img {
 .testimonial-content p,
 .author-content .testimonial-title p {
     font-size: 18px;
-    color: var(--transparent-secondry-color)
+    color: var(--text-color)
 }
 
 .testimonial-slider .swiper-pagination {
@@ -1399,7 +1402,8 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--transparent-secondry-color);
+    background-color: var(--accent-color-3);
+    opacity: 40%;
     z-index: -1
 }
 
@@ -1409,9 +1413,7 @@ img {
 
 .home-contact-form .section-title h3,
 .home-contact-form .section-title h2 {
-    color: var(--primary-color);
-    -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+    color: var(--text-color);
 }
 
 .contact-appointment {
@@ -1426,7 +1428,7 @@ img {
 }
 
 .contact-appointment .appointment-content h3 {
-    color: var(--secondry-color);
+    color: var(--text-color);
     font-size: 32px;
     text-align: center
 }
@@ -1443,9 +1445,9 @@ img {
     padding: 12px 10px;
     font-size: 14px;
     background-color: #fff0;
-    border-color: var(--transparent-color);
+    border-color: var(--accent-color);
     border-radius: 6px;
-    color: var(--secondry-color)
+    color: var(--text-color)
 }
 
 .contact-form textarea,
@@ -1456,13 +1458,13 @@ img {
 
 .contact-form textarea::placeholder,
 .contact-form .form-control::placeholder {
-    color: var(--secondry-color);
+    color: var(--text-color);
     font-weight: 500
 }
 
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
-    color: var(--secondry-color)
+    color: var(--text-color)
 }
 
 .contact-form .form-group {
@@ -1471,12 +1473,12 @@ img {
 }
 
 .contact-form .form-group .btn-default::after {
-    background: var(--secondry-color)
+    background: var(--accent-color-2)
 }
 
 .main-footer {
     padding: 80px 0 40px;
-    background: var(--accent-color)
+    background: var(--text-color)
 }
 
 .about-footer {
@@ -1492,7 +1494,7 @@ img {
 }
 
 .footer-content p {
-    color: var(--secondry-color);
+    color: var(--accent-color-2);
     font-size: 16px
 }
 
@@ -1512,20 +1514,20 @@ img {
 }
 
 .footer-social-links ul li a {
-    color: var(--accent-color);
+    color: var(--accent-color-2);
     font-size: 22px;
     transition: all 0.3s ease-in-out
 }
 
 .footer-social-links ul li a:hover {
-    color: var(--secondry-color)
+    color: var(--accent-color-2)
 }
 
 .footer-quick-links h2,
 .footer-contact-details h2,
 .footer-newsletter h2 {
     font-size: 22px;
-    color: var(--secondry-color);
+    color: var(--accent-color-2);
     text-transform: capitalize;
     margin-bottom: 40px
 }
@@ -1547,13 +1549,13 @@ img {
 .footer-quick-links ul li a {
     display: block;
     font-size: 16px;
-    color: var(--secondry-color);
+    color: var(--accent-color-2);
     text-transform: capitalize;
     transition: all 0.3s ease-in-out
 }
 
 .footer-quick-links ul li a:hover {
-    color: var(--primary-color)
+    color: var(--accent-color-2)
 }
 
 .footer-contact-box .footer-info-box {
@@ -1577,13 +1579,13 @@ img {
 }
 
 .footer-info-box .icon-box i {
-    color: var(--accent-color);
+    color: var(--accent-color-2);
     font-size: 20px
 }
 
 .footer-info-box p {
     font-size: 16px;
-    color: var(--secondry-color)
+    color: var(--accent-color-2)
 }
 
 .subscribe-content {
@@ -1591,14 +1593,14 @@ img {
 }
 
 .subscribe-content h3 {
-    color: var(--secondry-color);
+    color: var(--accent-color-2);
     font-size: 18px;
     text-transform: capitalize;
     margin-bottom: 20px
 }
 
 .subscribe-content p {
-    color: var(--secondry-color);
+    color: var(--accent-color-2);
     font-size: 16px
 }
 
@@ -1619,9 +1621,9 @@ img {
     width: 60%;
     padding: 12px 10px;
     font-size: 14px;
-    background: #fff0;
+    background: var(--body-background);
     border: none;
-    color: var(--secondry-color)
+    color: var(--text-color)
 }
 
 .footer-newsletter-form .form-group .form-control:focus {
@@ -1630,7 +1632,7 @@ img {
 }
 
 .footer-newsletter-form .form-group .form-control::placeholder {
-    color: var(--transparent-color);
+    color: var(--text-color);
     font-weight: 500
 }
 
@@ -1653,7 +1655,7 @@ img {
 }
 
 .footer-copyright-text p {
-    color: var(--secondry-color);
+    color: var(--accent-color-2);
     text-transform: capitalize
 }
 
