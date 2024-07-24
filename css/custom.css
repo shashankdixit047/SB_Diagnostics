@@ -3087,7 +3087,7 @@ img {
 
 .opening-hour-title h3 {
     font-size: 32px;
-    color: var(--secondry-color);
+    color: var(--text-color);
     text-transform: capitalize
 }
 
@@ -3099,7 +3099,7 @@ img {
 
 .opening-hour-content ul li {
     font-size: 18px;
-    color: var(--secondry-color);
+    color: var(--text-color);
     display: flex;
     margin-bottom: 30px
 }
